@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- <h1>Expense Tracker</h1> -->
+        <div class="container">
+            <div class="logoContainer">
+                <h3>Expenses Tracker</h3>
+            </div>
+            <div id="expenseContainer" class="expenseContainer">
+                <label for="expenseDate">Date: </label>
+                <input type="date" id="expenseDate" class="inputAll" name="expenseDate" required>
+                <br>
+                <label for="expenseCategory">Category: </label>
+                <input type="search" list="expenseCategories" name="expenseCategory" id="expenseCategory"
+                    class="inputAll" pattern="Rent|Groceries|Eating Out|Savings|Shopping|Bills"
+                    title='Must be "Rent", "Groceries", "Eating Out", "Savings", "Shopping", or "Bills"'
+                    placeholder="Add Category" required>
+                <datalist id="expenseCategories">
+                    <option value="Rent">
+                    <option value="Groceries">
+                    <option value="Eating Out">
+                    <option value="Savings">
+                    <option value="Shopping">
+                    <option value="Bills">
+                </datalist>
+                <br>
+                <label for="expenseAmount">Amount (€): </label>
+                <input type="number" id="expenseAmount" class="inputAll" name="expenseAmount" placeholder="0.00"
+                    required>
+                <br>
+                <input type="button" value="Add Expense" class="expenseButton" id="expenseButton">
+            </div>
+        </div>
+
+        <div id="expenseListContainer" class="expenseListContainer">
+            <h2>Expenses Breakdown</h2>
+            <div id="expenseList" class="expenseList">
+                <table id="expenseTable" class="expenseTable">
+                    <!-- <tr class="expenseHeadings"> -->
+                    <thead>
+                        <th class="thDate">Date</th>
+                        <th class="thCategory">Category</th>
+                        <th class="thAmount">Amount</th>
+                        <th class="thDelete">Delete</th>
+                    </thead>
+                    <tbody>
+                        <!-- createElement in script.js -->
+                        <!-- <tr></tr> -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Expenses Total: </th>
+                            <td id="totalExpenses" colspan="3"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- TODO -->
+        <!-- <canvas id="expenseChart" style="width:100%;max-width:600px"></canvas> -->
+
+    </main>
+    <script src="./script.js"></script>
+
+    <!-- TODO -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+</body>
+
+</html>

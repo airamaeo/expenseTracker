@@ -1,0 +1,94 @@
+body {
+    background-color: #fff8e9;
+    font-family: 'Montserrat', serif;
+}
+
+.logoContainer h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 35px;
+    font-size: 40px;
+    color: #f1efef;
+    font-style: italic;
+}
+
+.logoContainer {
+    background-color: #526583;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.expenseContainer,
+.logoContainer {
+    color: #242424;
+    font-weight: 500;
+    border: 0.5px solid #242424;
+    padding: 30px;
+    width: 25%;
+    margin: 20px;
+}
+
+.expenseContainer {
+    background-color: #f1efef;
+}
+
+.expenseContainer input {
+    margin: 10px;
+}
+
+.expenseButton {
+    background-color: #969184;
+    color: #fff;
+    font-weight: 500;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.expenseListContainer h2 {
+    color: #526583;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.expenseTable {
+    width: 90%;
+    max-width: 800px;
+    min-width: 200px;
+    border: 1px solid #574747;
+    border-collapse: collapse;
+}
+
+.expenseTable th,
+.expenseTable td {
+    border: 1px solid #574747;
+    padding: 8px;
+}
+
+thead,
+tfoot th {
+    background-color: #829ABF;
+}
+
+td,
+tfoot td {
+    background-color: #f1efef;
+}
+
+.thDate,
+.thAmount,
+.thDelete {
+    width: 20%;
+}
+
+.expenseTable td {
+    text-align: center;
+}
+
+.expenseList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
